@@ -30,7 +30,7 @@ export default function Home() {
         <h3 className="text-3xl font-bold text-yellow-400">About Us</h3>
         <p className="text-gray-300 leading-relaxed">
           At Blog Haven, we aim to empower individuals to express their thoughts, share knowledge, 
-          and connect with a wider audience. Whether you're a professional writer or a beginner, 
+          and connect with a wider audience. Whether you&apos;re a professional writer or a beginner, 
           our tools are designed to make content creation easy and enjoyable.
         </p>
       </section>
