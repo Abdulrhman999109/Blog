@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base styles */
+body {
+  background-color: #fef9c3; /* yellow-50 */
+  @apply text-gray-900 m-0 font-sans leading-relaxed;
+  padding-top: 70px; /* مساحة إضافية بسبب وجود Navbar ثابت */
+}
+
+h1, h2 {
+  @apply font-bold text-gray-900 text-3xl;
+}
+
+main {
+  @apply max-w-6xl my-16 mx-auto px-6 py-8;
+}
+
+main > h2 {
+  @apply mb-6 pb-3 text-lg;
+}
+
+p > a {
+  @apply text-yellow-500 underline font-semibold;
+}
+
+/* nav styles */
+nav {
+  @apply bg-gray-900 text-white pb-6 pt-4 border-b-2 border-gray-300 flex items-center gap-8 justify-between w-full fixed top-0 left-0 z-50;
+}
+
+nav a, nav span {
+  @apply text-gray-200 font-medium hover:text-yellow-500 transition duration-300 ease-in-out;
+}
+
+nav a:hover {
+  @apply text-yellow-500;
+}
+
+main nav {
+  @apply border-0;
+}
+
+/* button styles */
+button {
+  @apply px-5 py-3 rounded-lg bg-yellow-500 text-gray-900 font-semibold flex justify-center items-center gap-2 transition duration-300 ease-in-out;
+}
+
+button:hover {
+  @apply bg-yellow-400;
+}
+
+.btn-primary {
+  @apply bg-yellow-500 text-gray-900;
+}
+
+.btn-secondary {
+  @apply bg-gray-800 text-white hover:bg-gray-700;
+}
+
+/* form styles */
+form {
+  @apply py-6 px-8 bg-gray-100 bg-opacity-75 rounded-lg shadow-lg block mx-auto min-w-fit w-3/4 max-w-2xl;
+}
+
+form label {
+  @apply block text-gray-900 font-medium mb-2;
+}
+
+form input,
+form textarea,
+form select {
+  @apply block mt-4 px-4 py-2 rounded-md w-full bg-white border-2 border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-500;
+}
+
+form button {
+  @apply block mx-auto mt-6;
+}
+
+/* feedback styles */
+.error {
+  @apply border-2 border-red-500 bg-red-200 text-red-900 py-2 px-3 rounded-md block max-w-fit my-6 mx-auto shadow-md;
+}
+
+/* card styles */
+.card {
+  @apply bg-white shadow-lg rounded-lg py-6 px-5 my-6 relative overflow-hidden border border-gray-300;
+}
+
+.card h3 {
+  @apply font-semibold text-gray-800 text-xl mb-2;
+}
+
+.card p {
+  @apply my-4 text-gray-700 text-base leading-relaxed;
+}
+
+/* pill styles */
+.pill {
+  @apply py-1 px-3 mt-3 inline-block text-xs font-semibold rounded-md;
+}
+
+.pill.high {
+  @apply bg-red-300 text-red-800;
+}
+
+.pill.medium {
+  @apply bg-blue-300 text-blue-800;
+}
+
+.pill.low {
+  @apply bg-emerald-300 text-emerald-800;
+}
+
+.card .pill {
+  @apply absolute bottom-4 right-4 rounded-md;
+}

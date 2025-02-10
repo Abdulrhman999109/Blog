@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: var(--foreground);
+  background: #fefce8;
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  @apply 
+    bg-gray-800 
+    p-8 rounded-3xl shadow-lg border border-gray-700 
+    hover:shadow-2xl hover:shadow-yellow-50 transition duration-300 
+    flex flex-col justify-between gap-6 
+    w-full max-w-4xl mx-auto;
+}
+
+.card h3 {
+  @apply 
+    text-2xl font-bold text-yellow-50 mb-4 break-words tracking-wide;
+}
+
+.card p {
+  @apply 
+    text-gray-300 text-base leading-relaxed break-words;
+}
+
+.card:hover h3 {
+  @apply text-yellow-400;
+}
+
+a {
+  @apply 
+    text-gray-400 transition duration-200;
+}
+a:hover {
+  @apply text-yellow-400;
+}
+
+nav {
+  @apply 
+    bg-gray-900 text-yellow-50 py-4 px-8 
+    fixed top-0 w-full shadow-md z-20 flex justify-between items-center;
+}
+
+nav .logo {
+  @apply 
+    text-yellow-50 text-3xl font-bold tracking-wide;
+}
+
+nav .links {
+  @apply 
+    flex gap-6 text-lg;
+}
+
+nav a {
+  @apply 
+    text-gray-300 px-4 py-2 rounded-md transition duration-200;
+}
+
+nav a:hover {
+  @apply bg-gray-800 text-yellow-50;
+}
+
+nav .user-info {
+  @apply 
+    flex items-center gap-4 text-sm text-gray-400;
+}
+
+nav .logout-btn {
+  @apply 
+    bg-red-600 text-white px-4 py-2 rounded-md shadow-md 
+    hover:bg-red-500 transition duration-300;
+}
+
+.form-container {
+  @apply 
+    bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-700 
+    max-w-4xl w-full mx-auto mt-16;
+}
+
+.form-title {
+  @apply 
+    text-3xl font-bold text-center mb-6 text-yellow-50 tracking-wide;
+}
+
+.form-grid {
+  @apply 
+    grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8;
+}
+
+.form-label {
+  @apply 
+    text-yellow-50 text-lg font-medium mb-2;
+}
+
+.form-input, .form-textarea {
+  @apply 
+    w-full p-4 bg-gray-700 text-yellow-50 border border-gray-600 rounded-lg 
+    focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-200;
+}
+
+button {
+  @apply 
+    px-5 py-3 bg-gray-900 text-yellow-50 rounded-lg shadow-md 
+    hover:bg-gray-700 hover:shadow-lg transition duration-300;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "articels",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/supabase-js": "^2.48.1",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.18.0",
+    "eslint-config-next": "15.1.5",
+    "json-server": "^1.0.0-beta.3",
+    "next": "^15.1.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icon": "^1.0.0",
+    "tailwindcss": "3.4.17"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "encoding": "^0.1.13",
+    "postcss": "^8.5.1",
+    "postcss-loader": "^8.1.1"
+  }
+}
